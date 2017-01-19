@@ -30,7 +30,7 @@ Now, we have all the requirements to prepare the workshop environment.
 
 ## Download required vagrant boxes
 
-All boxes have user vagrant with sudo and password vagrant. On ubuntu boxes you'll be asked for password on first attempt.
+All boxes have the user vagrant with sudo privileges and with password vagrant. On ubuntu boxes you'll be asked for new password on first attempt.
 
 Linux & OS X:
 
