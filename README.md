@@ -17,14 +17,14 @@ Create 2 new Host-Only networks in your Virualbox installation:
 - Go to Preferences > Networks > Host-only Networks.
 
 - Create a new network named vboxnet1, edit and set:
-                      - IPv4 address: 10.100.0.254
-                      - IPv4 Network Mask: 255.255.255.0
-                      - Disable DHCP Server
+                      IPv4 address: 10.100.0.254
+                      IPv4 Network Mask: 255.255.255.0
+                      Disable DHCP Server
 
 - Create a new network named vboxnet2, edit and set:
-                      - IPv4 address: 10.200.0.254
-                      - IPv4 Network Mask: 255.255.255.0
-                      - Disable DHCP Server
+                      IPv4 address: 10.200.0.254
+                      IPv4 Network Mask: 255.255.255.0
+                      Disable DHCP Server
 
 Now, we have all the requirements to prepare the workshop environment.
 
