@@ -16,10 +16,6 @@ nodes = [
 
 ]
 
-# Remove Shared Folders, we're not using them.
-
-Vagrant.actions[:start].delete(Vagrant::Action::VM::ShareFolders)
-
 # Deployment of the Workshop enviroment
 
 Vagrant.configure("2") do |config|
@@ -28,6 +24,8 @@ Vagrant.configure("2") do |config|
     config.vm.define node[:hostname] do |nodeconfig|
       nodeconfig.vm.box = node[:box]
       nodeconfig.vm.hostname = node[:hostname] + ".box"
+      # Disable Shared Folders, we're not using them.
+      nodeconfig.vm.synced_folder ".", "/vagrant", :disabled => true    
       nodeconfig.vm.network :forwarded_port, guest: 22, host: node[:fport], id: 'ssh' 
       nodeconfig.vm.network "private_network", ip: node[:ip], :mac => node[:mac], :name => node[:net], :adapter => node[:nic]
 
@@ -54,9 +52,3 @@ Vagrant.configure("2") do |config|
   	end
   end
 end
-
-
-# Problems with vagrant and network config on jessie ...
-
-#  { :hostname => 'rear-debian', :ip => '10.100.0.20', :net => 'vboxnet2', :nic => 2 , :box => 'debian/jessie64', :ram => 256 , :script => 'shell/rear_debian.sh' },
-#  { :hostname => 'drlm-debian', :ip => '10.100.0.20', :net => 'vboxnet2', :nic =>  2 , :ip2 => '10.200.0.20', :net2 => 'vboxnet3', :nic2 => 3 , :box => 'debian/jessie64', :ram => 512 , :script => 'shell/drlm_debian.sh' },
