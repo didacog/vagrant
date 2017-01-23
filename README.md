@@ -98,10 +98,22 @@ All boxes have the user vagrant with sudo privileges and with password vagrant. 
 ### GNU/Linux & OS X:
 
 ```sh
-$ vagrant box add https://atlas.hashicorp.com/debian/boxes/jessie64
-$ vagrant box add https://atlas.hashicorp.com/centos/boxes/7
-$ vagrant box add https://atlas.hashicorp.com/opensuse/boxes/openSUSE-42.1-x86_64
-$ vagrant box add https://atlas.hashicorp.com/ubuntu/boxes/xenial64
+$ vagrant box add https://atlas.hashicorp.com/suse/boxes/sles12sp1
+
+   This box can work with multiple providers! The providers that it
+   can work with are listed below. Please review the list and choose
+   the provider you will be working with.
+
+   1) libvirt
+   2) virtualbox
+
+   Enter your choice: 2
+   
+$ vagrant box add https://atlas.hashicorp.com/minimal/boxes/centos7
+
+$ vagrant box add https://atlas.hashicorp.com/minimal/boxes/jessie64
+
+$ vagrant box add https://atlas.hashicorp.com/minimal/boxes/xenial64
 ```
 
 ### Windows:
@@ -183,6 +195,97 @@ $ vagrant destroy -f
 
 ```sh
 NO INSTRUCTIONS FOR WINDOWS AT THIS TIME
+```
+
+## Useful List of Vagrant Boxes for reference:
+
+### CentOS 6 (minimal)
+```sh
+$ vagrant box add https://atlas.hashicorp.com/minimal/boxes/centos6
+```
+### CentOS 7 (minimal)
+```sh
+$ vagrant box add https://atlas.hashicorp.com/minimal/boxes/centos7
+```
+### Debian 7 (minimal)
+```sh
+$ vagrant box add https://atlas.hashicorp.com/minimal/boxes/wheezy64
+```
+### Debian 8 (minimal)
+```sh
+$ vagrant box add https://atlas.hashicorp.com/minimal/boxes/jessie64
+```
+### Ubuntu 14.04 (minimal)
+```sh
+$ vagrant box add https://atlas.hashicorp.com/minimal/boxes/trusty64
+```
+### Ubuntu 16.04 (minimal)
+```sh
+$ vagrant box add https://atlas.hashicorp.com/minimal/boxes/xenial64
+```
+### SLES 11 SP3 (jeOS)
+```sh
+$ vagrant box add https://atlas.hashicorp.com/suse/boxes/sles11sp3
+
+   This box can work with multiple providers! The providers that it
+   can work with are listed below. Please review the list and choose
+   the provider you will be working with.
+
+   1) libvirt
+   2) virtualbox
+
+   Enter your choice: 2
+```
+### SLES 12 SP1 (jeOS)
+```sh
+$ vagrant box add https://atlas.hashicorp.com/suse/boxes/sles12sp1
+
+   This box can work with multiple providers! The providers that it
+   can work with are listed below. Please review the list and choose
+   the provider you will be working with.
+
+   1) libvirt
+   2) virtualbox
+
+   Enter your choice: 2
+```
+### Debian 8 (oficial)
+```sh
+$ vagrant box add https://atlas.hashicorp.com/debian/boxes/jessie64
+
+   This box can work with multiple providers! The providers that it
+   can work with are listed below. Please review the list and choose
+   the provider you will be working with.
+
+   1) libvirt
+   2) lxc
+   3) virtualbox
+
+   Enter your choice:3
+```
+
+### CentOS 6 (oficial)
+
+```sh
+$ vagrant box add https://atlas.hashicorp.com/centos/boxes/6
+```
+
+### CentOS 7 (oficial)
+
+```sh
+$ vagrant box add https://atlas.hashicorp.com/centos/boxes/7
+```
+
+### Ubuntu 16.04 (oficial)
+
+```sh
+$ vagrant box add https://atlas.hashicorp.com/ubuntu/boxes/xenial64
+```
+
+### OpenSUSE 42.1 (oficial)
+
+```sh
+$ vagrant box add https://atlas.hashicorp.com/opensuse/boxes/openSUSE-42.1-x86_64
 ```
 
 ## Release History
