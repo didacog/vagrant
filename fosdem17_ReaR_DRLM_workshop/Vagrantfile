@@ -4,14 +4,14 @@ nodes = [
 
 # ReaR clients
 
-  { :hostname => 'rear-centos', :fport => 22210 , :ip => '10.100.0.10', :mac => '080027010010', :net => 'vboxnet2', :nic => 2 , :box => 'centos/7', :ram => 256 , :script => 'shell/rear_centos.sh' },
-  { :hostname => 'rear-suse', :fport => 22211 , :ip => '10.200.0.11', :mac => '080027010011', :net => 'vboxnet3', :nic => 2 , :box => 'opensuse/openSUSE-42.1-x86_64', :ram => 256 , :script => 'shell/rear_suse.sh' },
-  { :hostname => 'rear-ubuntu', :fport => 22212 , :ip => '10.200.0.12', :mac => '080027010012', :net => 'vboxnet3', :nic => 2 , :box => 'ubuntu/xenial64', :ram => 256 , :script => 'shell/rear_ubuntu.sh' },
+  { :hostname => 'rear-centos', :fport => 22210 , :ip => '10.100.0.10', :mac => '080027010010', :net => 'vboxnet1', :nic => 2 , :box => 'centos/7', :ram => 256 , :script => 'shell/rear_centos.sh' },
+  { :hostname => 'rear-suse', :fport => 22211 , :ip => '10.200.0.11', :mac => '080027010011', :net => 'vboxnet2', :nic => 2 , :box => 'opensuse/openSUSE-42.1-x86_64', :ram => 256 , :script => 'shell/rear_suse.sh' },
+  { :hostname => 'rear-ubuntu', :fport => 22212 , :ip => '10.200.0.12', :mac => '080027010012', :net => 'vboxnet2', :nic => 2 , :box => 'ubuntu/xenial64', :ram => 256 , :script => 'shell/rear_ubuntu.sh' },
 
 # DRLM servers
 
-  { :hostname => 'drlm-01', :fport => 22250 , :ip => '10.100.0.50', :mac => '080027010050', :net => 'vboxnet2', :nic =>  2 , :ip2 => '10.200.0.50', :mac2 => '080027020050', :net2 => 'vboxnet3', :nic2 => 3 , :box => 'ubuntu/xenial64', :ram => 512 , :script => 'shell/drlm_ubuntu.sh' },
-  { :hostname => 'drlm-02', :fport => 22260 , :ip => '10.100.0.60', :mac => '080027010060', :net => 'vboxnet2', :nic =>  2 , :ip2 => '10.200.0.60', :mac2 => '080027020050', :net2 => 'vboxnet3', :nic2 => 3 , :box => 'ubuntu/xenial64', :ram => 512 , :script => 'shell/drlm_ubuntu.sh' },
+  { :hostname => 'drlm-01', :fport => 22250 , :ip => '10.100.0.50', :mac => '080027010050', :net => 'vboxnet1', :nic =>  2 , :ip2 => '10.200.0.50', :mac2 => '080027020050', :net2 => 'vboxnet2', :nic2 => 3 , :box => 'ubuntu/xenial64', :ram => 512 , :script => 'shell/drlm_ubuntu.sh' },
+  { :hostname => 'drlm-02', :fport => 22260 , :ip => '10.100.0.60', :mac => '080027010060', :net => 'vboxnet1', :nic =>  2 , :ip2 => '10.200.0.60', :mac2 => '080027020050', :net2 => 'vboxnet2', :nic2 => 3 , :box => 'ubuntu/xenial64', :ram => 512 , :script => 'shell/drlm_ubuntu.sh' },
 
 ]
 
