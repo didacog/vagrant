@@ -11,8 +11,8 @@ nodes = [
 
 # DRLM servers
 
-  { :hostname => 'drlm-01', :fport => 22250 , :ip => '10.100.0.50', :mac => '080027010050', :net => 'vboxnet1', :nic =>  2 , :ip2 => '10.200.0.50', :mac2 => '080027020050', :net2 => 'vboxnet2', :nic2 => 3 , :box => 'minimal/xenial64', :ram => 512 , :script => 'shell/drlm_ubuntu.sh' },
-  { :hostname => 'drlm-02', :fport => 22260 , :ip => '10.100.0.60', :mac => '080027010060', :net => 'vboxnet1', :nic =>  2 , :ip2 => '10.200.0.60', :mac2 => '080027020050', :net2 => 'vboxnet2', :nic2 => 3 , :box => 'minimal/jessie64', :ram => 512 , :script => 'shell/drlm_debian.sh' },
+  { :hostname => 'drlm-ubuntu', :fport => 22250 , :ip => '10.100.0.50', :mac => '080027010050', :net => 'vboxnet1', :nic =>  2 , :ip2 => '10.200.0.50', :mac2 => '080027020050', :net2 => 'vboxnet2', :nic2 => 3 , :box => 'minimal/xenial64', :ram => 512 , :script => 'shell/drlm_ubuntu.sh' },
+  { :hostname => 'drlm-debian', :fport => 22260 , :ip => '10.100.0.60', :mac => '080027010060', :net => 'vboxnet1', :nic =>  2 , :ip2 => '10.200.0.60', :mac2 => '080027020060', :net2 => 'vboxnet2', :nic2 => 3 , :box => 'minimal/jessie64', :ram => 512 , :script => 'shell/drlm_debian.sh' },
 
 ]
 
