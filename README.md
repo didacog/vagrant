@@ -115,6 +115,15 @@ $ vagrant box add https://atlas.hashicorp.com/minimal/boxes/jessie64
 
 $ vagrant box add https://atlas.hashicorp.com/minimal/boxes/xenial64
 ```
+Check if downloaded correctly:
+
+```sh
+$ vagrant box list
+minimal/centos7  (virtualbox, 7.0)
+minimal/jessie64 (virtualbox, 8.0)
+minimal/xenial64 (virtualbox, 16.04.1)
+suse/sles12sp1   (virtualbox, 0.0.1)
+```
 
 ### Windows:
 
