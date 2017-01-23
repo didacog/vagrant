@@ -263,7 +263,7 @@ $ vagrant box add https://atlas.hashicorp.com/suse/boxes/sles12sp1
 
    Enter your choice: 2
 ```
-### Debian 8 (oficial)
+### Debian 8 (official)
 ```sh
 $ vagrant box add https://atlas.hashicorp.com/debian/boxes/jessie64
 
@@ -278,25 +278,25 @@ $ vagrant box add https://atlas.hashicorp.com/debian/boxes/jessie64
    Enter your choice:3
 ```
 
-### CentOS 6 (oficial)
+### CentOS 6 (official)
 
 ```sh
 $ vagrant box add https://atlas.hashicorp.com/centos/boxes/6
 ```
 
-### CentOS 7 (oficial)
+### CentOS 7 (official)
 
 ```sh
 $ vagrant box add https://atlas.hashicorp.com/centos/boxes/7
 ```
 
-### Ubuntu 16.04 (oficial)
+### Ubuntu 16.04 (official)
 
 ```sh
 $ vagrant box add https://atlas.hashicorp.com/ubuntu/boxes/xenial64
 ```
 
-### OpenSUSE 42.1 (oficial)
+### OpenSUSE 42.1 (official)
 
 ```sh
 $ vagrant box add https://atlas.hashicorp.com/opensuse/boxes/openSUSE-42.1-x86_64
