@@ -7,7 +7,6 @@ chage -d0 ubuntu
 useradd -d /home/vagrant -m -G sudo vagrant
 passwd -d -u vagrant
 chage -d0 vagrant
-
 echo "vagrant ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers.d/90-cloud-init-users
 
 DATE=$(date +%Y-%m-%d_%H:%M:%S)
