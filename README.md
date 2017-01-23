@@ -93,12 +93,17 @@ Now, we have all the requirements to prepare the workshop environment.
 
 ## Download required vagrant boxes
 
-All boxes have the user vagrant with sudo privileges and with password vagrant. On ubuntu boxes you'll be asked for new password on first attempt.
+- SLES 11 SP3
+- CentOS 7
+- Debian 8
+- Ubuntu 16.04
+
+All boxes have the user vagrant with sudo privileges and with password vagrant. 
 
 ### GNU/Linux & OS X:
 
 ```sh
-$ vagrant box add https://atlas.hashicorp.com/suse/boxes/sles12sp1
+$ vagrant box add https://atlas.hashicorp.com/suse/boxes/sles11sp3
 
    This box can work with multiple providers! The providers that it
    can work with are listed below. Please review the list and choose
