@@ -10,3 +10,5 @@ echo "fosdem17 ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers.d/90-cloud-init-users
 echo "Restarting network service ..."
 
 systemctl restart network
+
+echo "End of $HOSTNAME customization ..."
