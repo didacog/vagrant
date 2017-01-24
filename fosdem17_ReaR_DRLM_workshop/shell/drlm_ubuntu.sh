@@ -46,6 +46,6 @@ systemctl restart apache2.service
 systemctl status apache2.service
 
 echo "$(date) - Rebooting system to apply changes ..."
-reboot
+nohup reboot > /dev/null 2>&1 &
 
 echo "End of $HOSTNAME customization ..."
