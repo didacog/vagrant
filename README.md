@@ -300,6 +300,16 @@ $ vagrant box add https://atlas.hashicorp.com/ubuntu/boxes/xenial64
 
 ```sh
 $ vagrant box add https://atlas.hashicorp.com/opensuse/boxes/openSUSE-42.1-x86_64
+
+   This box can work with multiple providers! The providers that it
+   can work with are listed below. Please review the list and choose
+   the provider you will be working with.
+
+   1) libvirt
+   2) virtualbox
+   3) vmware_desktop
+
+   Enter your choice: 2
 ```
 
 ## Release History
