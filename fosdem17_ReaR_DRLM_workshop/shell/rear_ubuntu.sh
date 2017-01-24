@@ -1,6 +1,6 @@
 echo "Hello from $HOSTNAME at FOSDEM 2017"
 
-echo "$(date) - Refreshing repositories ..."
+echo "$(date) - Refreshing repositories and upgrading ..."
 export DEBIAN_FRONTEND=noninteractive
 apt-get update
 apt-get -y install kbd
