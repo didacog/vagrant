@@ -100,7 +100,7 @@ Now, we have all the requirements to prepare the workshop environment.
 
 ##### NOTE:
 ```sh
-OpenSUSE 42.1 box is disabled by default because is a huge box (1hour downloading aprox.). 
+OpenSUSE 42.1 box is disabled by default because is a huge box (1hour downloading aprox.) 
 If you want to use it please download the box before the workshop and uncomment it 
 from the Vagrantfile. 
 ```
