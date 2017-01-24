@@ -45,4 +45,7 @@ systemctl status rpcbind.service
 systemctl restart apache2.service
 systemctl status apache2.service
 
+echo "$(date) - Rebooting system to apply changes ..."
+reboot
+
 echo "End of $HOSTNAME customization ..."
