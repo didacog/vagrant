@@ -3,6 +3,7 @@ echo "Hello from $HOSTNAME at FOSDEM 2017"
 cd /
 echo "$(date) - Starting DRLM Provisioning ..."
 echo "$(date) - Installing DRLM deps ..."
+sed -i "/ftp/s/.us./.be./g" /etc/apt/sources.list
 apt-get update
 apt-get -y install openssh-client openssl wget gzip tar gawk sed grep coreutils util-linux nfs-kernel-server rpcbind isc-dhcp-server tftpd-hpa syslinux apache2 qemu-utils sqlite3
 apt-get -y install lsb-release
