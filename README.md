@@ -93,17 +93,32 @@ Now, we have all the requirements to prepare the workshop environment.
 
 ## Download required vagrant boxes
 
-- SLES 11 SP3
 - CentOS 7
 - Debian 8
 - Ubuntu 16.04
+- OpenSUSE 42.1 (optional)
+
+##### NOTE:
+```sh
+OpenSUSE 42.1 box is disabled by default because is a huge box (1hour downloading aprox.). 
+If you want to use it please download the box before the workshop and uncomment it 
+from the Vagrantfile. 
+```
 
 All boxes have the user vagrant with sudo privileges and with password vagrant. 
 
 ### GNU/Linux & OS X:
 
-```sh
-$ vagrant box add https://atlas.hashicorp.com/suse/boxes/sles11sp3
+```sh   
+$ vagrant box add https://atlas.hashicorp.com/minimal/boxes/centos7
+
+$ vagrant box add https://atlas.hashicorp.com/minimal/boxes/jessie64
+
+$ vagrant box add https://atlas.hashicorp.com/minimal/boxes/xenial64
+```
+###### OPTIONAL:
+```sh 
+$ vagrant box add https://atlas.hashicorp.com/opensuse/boxes/openSUSE-42.1-x86_64
 
    This box can work with multiple providers! The providers that it
    can work with are listed below. Please review the list and choose
@@ -111,14 +126,9 @@ $ vagrant box add https://atlas.hashicorp.com/suse/boxes/sles11sp3
 
    1) libvirt
    2) virtualbox
+   3) vmware_desktop
 
    Enter your choice: 2
-   
-$ vagrant box add https://atlas.hashicorp.com/minimal/boxes/centos7
-
-$ vagrant box add https://atlas.hashicorp.com/minimal/boxes/jessie64
-
-$ vagrant box add https://atlas.hashicorp.com/minimal/boxes/xenial64
 ```
 Check if downloaded correctly:
 
@@ -127,7 +137,7 @@ $ vagrant box list
 minimal/centos7  (virtualbox, 7.0)
 minimal/jessie64 (virtualbox, 8.0)
 minimal/xenial64 (virtualbox, 16.04.1)
-suse/sles12sp1   (virtualbox, 0.0.1)
+opensuse/openSUSE-42.1-x86_64 (virtualbox, 1.0.0)
 ```
 
 ### Windows:
