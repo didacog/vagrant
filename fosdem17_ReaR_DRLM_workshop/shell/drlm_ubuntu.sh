@@ -37,6 +37,7 @@ echo "# Include the DRLM Configuration:" | tee -a /etc/apache2/apache2.conf
 echo "Include /usr/share/drlm/conf/HTTP/https.conf" | tee -a /etc/apache2/apache2.conf
 rm -v /etc/apache2/sites-enabled/*
 sed -i "s/Listen 80/#Listen 80/g" /etc/apache2/ports.conf
+
 echo "$(date) - Restarting & checking services ..."
 systemctl restart tftpd-hpa.service
 systemctl status tftpd-hpa.service
