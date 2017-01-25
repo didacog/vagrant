@@ -2,19 +2,19 @@
 > Disaster Recovery Management with ReaR and DRLM
 
 
-In this README are explained the required steps to prepare your own testing enviroment to follow the workshop and
+In this README you will find explained the required steps to prepare your own testing enviroment to follow the workshop and
 play with ReaR and DRLM installation.
 
 ## Requirements
 
-- Install Virtualbox and the extension pack here: https://www.virtualbox.org/wiki/Downloads
+- Install Virtualbox and the extension pack from here: https://www.virtualbox.org/wiki/Downloads
 - Install latest Vagrant software: https://www.vagrantup.com/downloads.html
 
 ## Configuration
 
 ### GNU/Linux & OS X:
 
-Create 2 new Host-Only networks in your Virualbox installation:
+Create 2 new Host-Only networks in your Virtualbox installation:
 
 #### A. Using GUI:
 
@@ -40,7 +40,7 @@ Create 2 new Host-Only networks in your Virualbox installation:
 ```sh
 If Host-only network environment in your VBox installation is more complex, 
 please create 2 new networks with the required configuration and adjust 
-the Vagrantfile appropriately.
+the Vagrantfile accordingly.
 ```
 
 #### B. Using CLI:
@@ -86,12 +86,12 @@ NO INSTRUCTIONS FOR WINDOWS AT THIS TIME
 ```sh
 If Host-only network environment in your VBox installation is more complex, 
 please create 2 new networks with the required configuration and adjust 
-the Vagrantfile appropriately.
+the Vagrantfile accordingly.
 ```
 
 Now, we have all the requirements to prepare the workshop environment.
 
-## Download required vagrant boxes
+## Download all required vagrant boxes
 
 - CentOS 7
 - Debian 8
@@ -100,12 +100,12 @@ Now, we have all the requirements to prepare the workshop environment.
 
 ##### NOTE:
 ```sh
-OpenSUSE 42.1 box is disabled by default because is a huge box (1hour downloading aprox.) 
+OpenSUSE 42.1 box is disabled by default because it is a huge box (1hour downloading approx.) 
 If you want to use it please download the box before the workshop and uncomment it 
 from the Vagrantfile. 
 ```
 
-All boxes have the user vagrant with sudo privileges and with password vagrant. 
+All boxes have the user "vagrant" with sudo privileges and password "vagrant". 
 
 ### GNU/Linux & OS X:
 
