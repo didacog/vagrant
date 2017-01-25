@@ -2,7 +2,7 @@
 > Disaster Recovery Management with ReaR and DRLM
 
 
-In this README you will find explained the required steps to prepare your own testing enviroment to follow the workshop and
+In this README you will find explained the required steps to prepare your own testing environment to follow the workshop and
 play with ReaR and DRLM installation.
 
 ## Requirements
