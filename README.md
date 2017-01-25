@@ -114,7 +114,7 @@ $ vagrant box add https://atlas.hashicorp.com/minimal/boxes/centos7
 
 $ vagrant box add https://atlas.hashicorp.com/minimal/boxes/jessie64
 
-$ vagrant box add https://atlas.hashicorp.com/ubuntu/boxes/xenial64
+$ vagrant box add https://atlas.hashicorp.com/minimal/boxes/xenial64
 ```
 ###### OPTIONAL:
 ```sh 
@@ -136,8 +136,8 @@ Check if downloaded correctly:
 $ vagrant box list
 minimal/centos7  (virtualbox, 7.0)
 minimal/jessie64 (virtualbox, 8.0)
+minimal/xenial64 (virtualbox, 16.04.1)
 opensuse/openSUSE-42.1-x86_64 (virtualbox, 1.0.0)
-ubuntu/xenial64  (virtualbox, 20170119.1.0)
 ```
 
 ### Windows:
@@ -260,7 +260,7 @@ $ vagrant box add https://atlas.hashicorp.com/suse/boxes/sles11sp3
 
    Enter your choice: 2
 ```
-### SLES 12 SP1 (jeOS) -- Panic at 1s boot ... :(
+### SLES 12 SP1 (jeOS) -- Panic at 1st boot ... :(
 ```sh
 $ vagrant box add https://atlas.hashicorp.com/suse/boxes/sles12sp1
 
