@@ -1,16 +1,8 @@
 echo "Hello from $HOSTNAME at FOSDEM 2017"
 
-echo "$(date) - Provisioning users ..."
-passwd -d -u ubuntu
-chage -d0 ubuntu
-
-useradd -d /home/vagrant -m -G sudo vagrant
-passwd -d -u vagrant
-chage -d0 vagrant
-echo "vagrant ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers.d/90-cloud-init-users
-
-echo "$(date) - Refreshing repositories ..."
+echo "$(date) - Refreshing repositories and installing missing required software for system integrity ..."
 apt-get update
+apt-get -y install kbd lvm2
 
 echo "$(date) - Rebooting system to apply changes ..."
 nohup reboot > /dev/null 2>&1 &
