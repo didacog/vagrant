@@ -1,11 +1,19 @@
 echo "Hello from $HOSTNAME at FOSDEM 2017"
 
+
+echo "$(date) - Provisioning users ..."
+passwd -d -u ubuntu
+chage -d0 ubuntu
+
+useradd -d /home/vagrant -m -G sudo vagrant
+passwd -d -u vagrant
+chage -d0 vagrant
+echo "vagrant ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers.d/90-cloud-init-users
+
 cd /
 echo "$(date) - Starting DRLM Provisioning ..."
 echo "$(date) - Installing DRLM deps ..."
-export DEBIAN_FRONTEND=noninteractive
 apt-get update
-apt-get -o Dpkg::Options::="--force-confnew" --force-yes -fuy upgrade
 apt-get -y install openssh-client openssl wget gzip tar gawk sed grep coreutils util-linux nfs-kernel-server rpcbind isc-dhcp-server tftpd-hpa syslinux apache2 qemu-utils sqlite3
 apt-get -y install lsb-release kbd
 
