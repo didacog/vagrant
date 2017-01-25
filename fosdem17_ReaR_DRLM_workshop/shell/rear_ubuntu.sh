@@ -12,8 +12,6 @@ echo "vagrant ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers.d/90-cloud-init-users
 echo "$(date) - Refreshing repositories ..."
 apt-get update
 
-
-
 echo "$(date) - Rebooting system to apply changes ..."
 nohup reboot > /dev/null 2>&1 &
 
